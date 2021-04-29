@@ -16,39 +16,34 @@
         <a href="../pages/buttonchaser.html">Button chaser</a>
     </header>
     <div class="calcWrapper">
-        <form onclick="calculator()">
-            <div class="line">
-                <input type="button" value="7" id="btn7">
-                <input type="button" value="8" id="btn8">
-                <input type="button" value="9" id="btn9">
-                <input type="button" value="+" id="btnAdd">
-            </div>
-            <div class="line">
-                <input type="button" value="4" id="btn4">
-                <input type="button" value="5" id="btn5">
-                <input type="button" value="6" id="btn6">
-                <input type="button" value="-" id="btnMinus">
-            </div>
-            <div class="line">
-                <input type="button" value="1" id="btn1">
-                <input type="button" value="2" id="btn2">
-                <input type="button" value="3" id="btn3">
-                <input type="button" value="x" id="btnMult">
-            </div>
-            <div class="line">            
-                <input type="button" value="." id="btnDot">
-                <input type="button" value="0" id="btn0">   
-                <input type="button" value="0" style="visibility: hidden;">  
-                <input type="button" value="/" id="btnDiv">
-            </div>
-            <div class="line">
-                <p id="numbre1">num1</p>
-                <p id="operation">+-/*</p>
-                <p id="number2">num2</p>
-                <p> = </p>
-                <p id="result">result</p>
-            </div>
-        </form>   
+        <div class="line">
+            <input type="button" value="7" id="btn7" onclick="display('7')">
+            <input type="button" value="8" id="btn8" onclick="display('8')">
+            <input type="button" value="9" id="btn9" onclick="display('9')">
+            <input type="button" value="+" id="btnAdd" onclick="display('+')">
+        </div>
+        <div class="line">
+            <input type="button" value="4" id="btn4" onclick="display('4')">
+            <input type="button" value="5" id="btn5" onclick="display('5')">
+            <input type="button" value="6" id="btn6" onclick="display('6')">
+            <input type="button" value="-" id="btnMinus" onclick="display('-')">
+        </div>
+        <div class="line">
+            <input type="button" value="1" id="btn1" onclick="display('1')">
+            <input type="button" value="2" id="btn2" onclick="display('2')">
+            <input type="button" value="3" id="btn3" onclick="display('3')">
+            <input type="button" value="x" id="btnMult" onclick="display('*')">
+        </div>
+        <div class="line">            
+            <input type="button" value="." id="btnDot" onclick="display('.')">
+            <input type="button" value="0" id="btn0" onclick="display('0')">   
+            <input type="button" value="C" id=btnClear onclick="display('clear')">  
+            <input type="button" value="/" id="btnDiv" onclick="display('/')">
+        </div>
+        <div class="line">   
+            <input type="button" value="=" onclick="solve()">      
+            <p id="result">result</p>
+        </div>   
     </div>
     <hr>
     <footer>
@@ -57,5 +52,5 @@
             <a href="../index.html">Back to main Page</a>
         </div>
     </footer>
-</body>
+    <script src="../scripts/calculator.js"></script>
 </html>
