@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator - A simple operation calculator</title>
+    <link rel="stylesheet" href="../styles/style.menu.css">
+    <link rel="stylesheet" href="../styles/style.calc.css">
 </head>
 <body>
     <header class="menu">
@@ -14,7 +16,30 @@
         <a href="../pages/buttonchaser.html">Button chaser</a>
     </header>
     <div class="calcWrapper">
-        
+        <div class="line1">
+            <input type="button" value="7" id="btn7">
+            <input type="button" value="8" id="btn8">
+            <input type="button" value="9" id="btn9">
+            <input type="button" value="+" id="btnAdd">
+        </div>
+        <div class="line2">
+            <input type="button" value="4" id="btn4">
+            <input type="button" value="5" id="btn5">
+            <input type="button" value="6" id="btn6">
+            <input type="button" value="-" id="btnMinus">
+        </div>
+        <div class="line3">
+            <input type="button" value="1" id="btn1">
+            <input type="button" value="2" id="btn2">
+            <input type="button" value="3" id="btn3">
+            <input type="button" value="x" id="btnMult">
+        </div>
+        <div class="line4">            
+            <input type="button" value="." id="btnDot">
+            <input type="button" value="0" id="btn0">   
+            <input type="button" value="0" style="visibility: hidden;">  
+            <input type="button" value="/" id="btnDiv">
+        </div>
     </div>
     <hr>
     <footer>
