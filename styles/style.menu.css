@@ -6,4 +6,11 @@
 .menu a {
     text-decoration: none;
     color: azure;
+    background-color: darkcyan;
+    margin: 0.5em;
+    padding: 0.5em;
+    border-radius: 5px;
+}
+h1 { 
+    color: orange;
 }
