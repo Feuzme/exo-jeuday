@@ -18,3 +18,14 @@ h1 {
 body {
     background-color: rgb(156, 156, 156);
 }
+footer {
+    display: flex;
+    flex-direction:  row;
+    justify-content: space-between; 
+}
+footer a {
+    background-color:darkcyan;
+    padding: 0.5em;
+    text-decoration: none;
+    border-radius: 5px;
+}
