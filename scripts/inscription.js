@@ -1,4 +1,6 @@
 var inscription = (form) =>{
-    alert("Vous vous appelez " + form.nom.value + " " + form.prenom.value + " vous avez " + form.age.value + " ans, êtes un(e) "
-    + form.sex.value + " vous habitez " + form.city.value);
+    alert("You are " + form.name.value + " " + form.firstname.value + " you are " + form.age.value + " years old, you're a "
+    + form.sex.value + ", you live in " + form.city.value);
+
+    console.log("test")
 }
