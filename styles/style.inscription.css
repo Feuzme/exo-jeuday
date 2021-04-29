@@ -1,6 +1,30 @@
 .inscription {
     display: flex;
     flex-direction: column;
-    flex-wrap: nowrap;
-    align-items:baseline
+    justify-content: space-between;
+    background-color: rgb(211, 170, 93);
+    border-radius: 5px;
+    width: 60%;
+}
+.inscription label{
+    width:90%;    
+    flex-direction: column;
+    align-self:stretch;
+    margin: .5em;
+    color: rgb(61, 82, 83);
+}
+.inscription input{
+    width: 100%;
+    margin: 0.3em;
+}
+.inscription button{
+    display: flex;
+    justify-self: flex-end;
+    align-self: flex-end;
+    width: 15%;
+    margin: 0.5em;
+}
+.inscriptionWrapper {
+    display: flex;
+    justify-content: center;
 }

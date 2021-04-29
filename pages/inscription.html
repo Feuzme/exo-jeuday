@@ -15,20 +15,34 @@
         <a href="../pages/imageroll.html">Image roll</a>
         <a href="../pages/buttonchaser.html">Button chaser</a>
     </header>
-    <div>
-        <form onclick="inscription(this)" method="get" class="inscription">
+    <div class="inscriptionWrapper">
+        <form onsubmit="inscription(this)" class="inscription">
             <label>
-                Nom : 
-                <input type="text" name="nom" id="nom">
+                Name : 
+                <input type="text" name="name" id="name">
             </label>
             <label>
-                Prenom : 
-                <input type="text" name="prenom" id="prenom">
+                Firstname : 
+                <input type="text" name="firstname" id="firstname">
             </label>
             <label>
                 Age : 
                 <input type="number" name="age" id="age">
             </label>
+            <label>
+                Sex : 
+                <select name="sex" id="sex">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="noAnswer">No answer</option>
+                </select>
+            </label>
+            <label>
+                City : 
+                <input type="text" name="city" id="city">
+            </label>
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
         </form>
     </div>
     <hr>
