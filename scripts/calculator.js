@@ -1,32 +1,33 @@
-var num1 = 0;
-var num2 = 0;
+var num1;
+var num2;
 var operator = "";
 
 var display = (btn) => {
     if (btn === 'clear') {
         document.getElementById('result').innerHTML = "";
-        var num1 = 0;
-        var num2 = 0;
-        var operator = "";
+        document.getElementById('num1').innerHTML = "";
+        document.getElementById('num2').innerHTML = "";
+        document.getElementById('op').innerHTML="";
+
     }else{        
         if(btn !== '*' && btn !== '/' && btn !== '-' && btn !== '+'){
-            if (operator == "") {
-                document.getElementById('result').innerHTML += btn;
-                num1 += +btn
+            if (document.getElementById('op').innerHTML == "") {
+                document.getElementById('num1').innerHTML += btn;
             } else {
-                document.getElementById('result').innerHTML += btn;
-                num2 += +btn
+                document.getElementById('num2').innerHTML += btn;
             }
-        }else{
-            operator = btn;   
-            document.getElementById('result').innerHTML += btn;
+        }else{              
+            document.getElementById('op').innerHTML = btn;
         }
     }
 }
 
 var solve = () => {
+    num1 = +document.getElementById('num1').innerHTML;
+    num2 = +document.getElementById('num2').innerHTML;
+    operator = document.getElementById('op').innerHTML
     switch (operator) {
-        case '+':
+        case '+':            
             document.getElementById('result').innerHTML = num1 + num2;
             break;
         case '-':
